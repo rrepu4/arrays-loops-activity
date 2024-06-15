@@ -6,8 +6,13 @@
  * 3. After the loop, log out the total number of
  *    hobbies
  */
-
-
+let groupMembers = ['dancing','tennis','working out'];
+console.log('The hobbies are:');
+for (let i=0; i < groupMembers.length; i++)
+     {
+          console.log(i+1+'. '+groupMembers[i]);
+     }
+     console.log('Total hobbies ', groupMembers.length);
 // Example output
 // 1. swimming
 // 2. board games
@@ -25,7 +30,17 @@
  * 4. Output the array and number of times teal was found
  */
 
-
+let colorsarray = ['green','red','teal','orange','teal'];
+let tealCount = 0;
+//console.log(colorsarray);
+for(let i=0; i < colorsarray.length; i++){
+     console.log(colorsarray[i]);
+     
+     if(colorsarray[i]=='teal'){
+          tealCount = tealCount + 1;
+     }
+}
+console.log('Teal was found ',tealCount, ' times');
 // Example output
 // green, red, teal, orange, teal
 // Teal was found 2 times
@@ -41,6 +56,20 @@
  * 4. Output the original array, odd number array and even number array
  */
 
+let arraynumbers = ['1','2','3','4','5'];
+let oddNumbers = [];
+let evenNumbers = [];
+
+for (let i=0; i < arraynumbers.length; i++){
+if(arraynumbers[i] % 2 == 0)
+     evenNumbers.push(arraynumbers[i])
+else
+oddNumbers.push(arraynumbers[i]);
+}
+
+console.log(arraynumbers);
+console.log('Odd ',oddNumbers);
+console.log('Even ',evenNumbers);
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
@@ -57,10 +86,21 @@
  * 4. Output both arrays
  */
 
-
+let booleanarray = ['true','false','true','true'];
+let toggled = [];
+for (let i=0; i<booleanarray.length; i++){
+     if(booleanarray[i]=='true'){
+          toggled.push('false');
+     }
+     else
+     toggled.push('true');
+}
+console.log(booleanarray);
+console.log(toggled);
 // Example output
 // true, false, true, true
 // Toggled false, true, false, false
+
 
 
 /**
